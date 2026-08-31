@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="IRON DISTRICT — Premium fitness club. Build your stronger self." />
+<title>IRON DISTRICT — Build Your Stronger Self</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-bar"><span></span></div>
+    <div class="loader-text">IRON DISTRICT</div>
+    <div class="loader-percent" id="loaderPercent">0%</div>
+  </div>
+</div>
+
+<!-- NOISE / GRAIN OVERLAY -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#hero" class="nav-logo">
+    <span class="logo-mark">ID</span>
+    <span class="logo-text">IRON<br/>DISTRICT</span>
+  </a>
+  <nav class="nav-links">
+    <a href="#programs">Programs</a>
+    <a href="#plans">Membership</a>
+    <a href="#trainers">Trainers</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#plans" class="nav-cta">
+    <span>Join Now</span>
+    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+  </a>
+  <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+    <span></span><span></span>
+  </button>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#programs">Programs</a>
+  <a href="#plans">Membership</a>
+  <a href="#trainers">Trainers</a>
+  <a href="#facilities">Facilities</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-3d" id="hero3d"></div>
+
+  <div class="hero-vignette" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="dot"></span>
+      <span>EST. 2014 — NEW DELHI</span>
+    </div>
+    <h1 class="hero-title">
+      <span class="hero-line" data-delay="0"><span>BUILD</span></span>
+      <span class="hero-line" data-delay="1"><span>YOUR <em>STRONGER</em></span></span>
+      <span class="hero-line" data-delay="2"><span>SELF.</span></span>
+    </h1>
+    <p class="hero-sub" data-delay="3">
+      A premium training district engineered for those who refuse average.
+      Heavy iron. Disciplined craft. Real results.
+    </p>
+    <div class="hero-actions" data-delay="4">
+      <a href="#plans" class="btn btn-primary">
+        <span>Start Your Journey</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#programs" class="btn btn-ghost">
+        <span>View Programs</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-meta">
+    <div class="hero-meta-item">
+      <div class="num" data-count="12">0</div><div class="lbl">Years</div>
+    </div>
+    <div class="hero-meta-item">
+      <div class="num" data-count="8400">0</div><div class="lbl">Members</div>
+    </div>
+    <div class="hero-meta-item">
+      <div class="num" data-count="32">0</div><div class="lbl">Coaches</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>STRENGTH</span><span class="dot">●</span>
+    <span>DISCIPLINE</span><span class="dot">●</span>
+    <span>POWER</span><span class="dot">●</span>
+    <span>PERFORMANCE</span><span class="dot">●</span>
+    <span>STRENGTH</span><span class="dot">●</span>
+    <span>DISCIPLINE</span><span class="dot">●</span>
+    <span>POWER</span><span class="dot">●</span>
+    <span>PERFORMANCE</span><span class="dot">●</span>
+  </div>
+</div>
+
+<!-- PROGRAMS -->
+<section class="section programs" id="programs">
+  <div class="section-head">
+    <div class="kicker"><span class="kicker-num">01</span><span>Training Programs</span></div>
+    <h2 class="section-title">Engineered for <em>performance.</em></h2>
+    <p class="section-sub">Six disciplines. One standard — relentless progression, periodized by coaches who lift too.</p>
+  </div>
+
+  <div class="programs-grid">
+    <article class="program-card" data-tilt>
+      <div class="card-number">01</div>
+      <div class="card-icon">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="6" y="26" width="8" height="12"/>
+          <rect x="50" y="26" width="8" height="12"/>
+          <rect x="2" y="28" width="4" height="8"/>
+          <rect x="58" y="28" width="4" height="8"/>
+          <rect x="14" y="30" width="36" height="4"/>
+        </svg>
+      </div>
+      <h3>Powerlifting</h3>
+      <p>Squat, bench, deadlift. Structured peaking blocks built around measurable 1RM gains.</p>
+      <ul>
+        <li>12-week peaking cycles</li>
+        <li>Form video review</li>
+        <li>Selectorized strength hall access</li>
+      </ul>
+      <a href="#contact" class="card-link">Enroll <span>→</span></a>
+    </article>
+
+    <article class="program-card" data-tilt>
+      <div class="card-number">02</div>
+      <div class="card-icon">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="32" cy="20" r="8"/>
+          <path d="M16 56c0-8 7-14 16-14s16 6 16 14"/>
+          <path d="M22 30l-4 12M42 30l4 12"/>
+        </svg>
+      </div>
+      <h3>Hypertrophy</h3>
+      <p>Body composition rewrites. Volume management, RIR-based programming, weekly check-ins.</p>
+      <ul>
+        <li>Coach-led 60-min sessions</li>
+        <li>Nutrition macros & timing</li>
+        <li>Body composition scans</li>
+      </ul>
+      <a href="#contact" class="card-link">Enroll <span>→</span></a>
+    </article>
+
+    <article class="program-card" data-tilt>
+      <div class="card-number">03</div>
+      <div class="card-icon">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M8 32h12l4-12 8 24 4-12h20"/>
+        </svg>
+      </div>
+      <h3>Conditioning</h3>
+      <p>Engine-building circuits, sprint intervals, and sled work for the metabolically relentless.</p>
+      <ul>
+        <li>5AM sunrise sessions</li>
+        <li>Heart-rate zone tracking</li>
+        <li>Recovery lab access</li>
+      </ul>
+      <a href="#contact" class="card-link">Enroll <span>→</span></a>
+    </article>
+
+    <article class="program-card" data-tilt>
+      <div class="card-number">04</div>
+      <div class="card-icon">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="10" y="10" width="44" height="44" rx="2"/>
+          <path d="M10 22h44M22 22v32M42 22v32M10 42h44"/>
+        </svg>
+      </div>
+      <h3>Combat</h3>
+      <p>Boxing, Muay Thai, and BJJ fundamentals coached by active competitors.</p>
+      <ul>
+        <li>Heavy bag studio</li>
+        <li>Sparring Saturdays</li>
+        <li>Mat space + ring</li>
+      </ul>
+      <a href="#contact" class="card-link">Enroll <span>→</span></a>
+    </article>
+
+    <article class="program-card" data-tilt>
+      <div class="card-number">05</div>
+      <div class="card-icon">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="32" cy="32" r="24"/>
+          <path d="M32 8v48M8 32h48M14 14l36 36M50 14L14 50"/>
+        </svg>
+      </div>
+      <h3>Mobility</h3>
+      <p>Joint prep, tissue work, and breathwork to keep you training decades, not months.</p>
+      <ul>
+        <li>Daily 30-min flows</li>
+        <li>Sauna & cold plunge</li>
+        <li>PT rehab partners</li>
+      </ul>
+      <a href="#contact" class="card-link">Enroll <span>→</span></a>
+    </article>
+
+    <article class="program-card" data-tilt>
+      <div class="card-number">06</div>
+      <div class="card-icon">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 52V20l20-12 20 12v32"/>
+          <path d="M22 52V36h20v16"/>
+          <path d="M28 52v-8h8v8"/>
+        </svg>
+      </div>
+      <h3>Athlete Lab</h3>
+      <p>1:1 coaching, force plates, and bespoke programming for serious competitors.</p>
+      <ul>
+        <li>Force plate diagnostics</li>
+        <li>Personal coach</li>
+        <li>Unlimited facility access</li>
+      </ul>
+      <a href="#contact" class="card-link">Apply <span>→</span></a>
+    </article>
+  </div>
+</section>
+
+<!-- PLANS -->
+<section class="section plans" id="plans">
+  <div class="section-head">
+    <div class="kicker"><span class="kicker-num">02</span><span>Membership</span></div>
+    <h2 class="section-title">Choose your <em>district.</em></h2>
+    <p class="section-sub">No hidden fees. No pushy contracts. Train on your terms.</p>
+  </div>
+
+  <div class="plans-grid">
+    <div class="plan-card" data-tilt>
+      <div class="plan-head">
+        <div class="plan-name">Starter</div>
+        <div class="plan-tag">Floor access</div>
+      </div>
+      <div class="plan-price">
+        <span class="currency">₹</span>
+        <span class="amount">2,499</span>
+        <span class="period">/mo</span>
+      </div>
+      <ul class="plan-features">
+        <li><span class="check">✓</span> Off-peak gym floor</li>
+        <li><span class="check">✓</span> Locker + towel service</li>
+        <li><span class="check">✓</span> 2 group classes / week</li>
+        <li><span class="check">✓</span> App-based programming</li>
+        <li class="muted"><span>—</span> Coach-led sessions</li>
+        <li class="muted"><span>—</span> Sauna & cold plunge</li>
+      </ul>
+      <a href="#contact" class="btn btn-ghost btn-block">Get Started</a>
+    </div>
+
+    <div class="plan-card plan-featured" data-tilt>
+      <div class="plan-badge">Most Popular</div>
+      <div class="plan-head">
+        <div class="plan-name">Pro</div>
+        <div class="plan-tag">Full facility</div>
+      </div>
+      <div class="plan-price">
+        <span class="currency">₹</span>
+        <span class="amount">4,999</span>
+        <span class="period">/mo</span>
+      </div>
+      <ul class="plan-features">
+        <li><span class="check">✓</span> 24/7 unlimited access</li>
+        <li><span class="check">✓</span> All group classes</li>
+        <li><span class="check">✓</span> Sauna + cold plunge</li>
+        <li><span class="check">✓</span> Quarterly body scan</li>
+        <li><span class="check">✓</span> 1 PT session / month</li>
+        <li class="muted"><span>—</span> Force plate diagnostics</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary btn-block">Start Your Journey</a>
+    </div>
+
+    <div class="plan-card" data-tilt>
+      <div class="plan-head">
+        <div class="plan-name">Elite</div>
+        <div class="plan-tag">1:1 coaching</div>
+      </div>
+      <div class="plan-price">
+        <span class="currency">₹</span>
+        <span class="amount">9,999</span>
+        <span class="period">/mo</span>
+      </div>
+      <ul class="plan-features">
+        <li><span class="check">✓</span> Everything in Pro</li>
+        <li><span class="check">✓</span> Personal coach (8× / mo)</li>
+        <li><span class="check">✓</span> Force plate diagnostics</li>
+        <li><span class="check">✓</span> Custom nutrition plan</li>
+        <li><span class="check">✓</span> Recovery suite unlimited</li>
+        <li><span class="check">✓</span> Priority class booking</li>
+      </ul>
+      <a href="#contact" class="btn btn-ghost btn-block">Apply</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINERS -->
+<section class="section trainers" id="trainers">
+  <div class="section-head">
+    <div class="kicker"><span class="kicker-num">03</span><span>Coaches</span></div>
+    <h2 class="section-title">Trained by those <em>who train.</em></h2>
+    <p class="section-sub">Active competitors. Certified coaches. People who walk the walk between reps.</p>
+  </div>
+
+  <div class="trainers-grid">
+    <div class="trainer-card" data-tilt>
+      <div class="trainer-photo trainer-1">
+        <div class="silhouette"></div>
+        <div class="photo-grain"></div>
+      </div>
+      <div class="trainer-info">
+        <div class="trainer-name">Arjun Mehta</div>
+        <div class="trainer-role">Head Strength Coach</div>
+        <div class="trainer-tags">
+          <span>Powerlifting</span><span>Programming</span><span>3× National Medalist</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="trainer-card" data-tilt>
+      <div class="trainer-photo trainer-2">
+        <div class="silhouette"></div>
+        <div class="photo-grain"></div>
+      </div>
+      <div class="trainer-info">
+        <div class="trainer-name">Priya Sharma</div>
+        <div class="trainer-role">Hypertrophy Specialist</div>
+        <div class="trainer-tags">
+          <span>Body Comp</span><span>Nutrition</span><span>CISSN</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="trainer-card" data-tilt>
+      <div class="trainer-photo trainer-3">
+        <div class="silhouette"></div>
+        <div class="photo-grain"></div>
+      </div>
+      <div class="trainer-info">
+        <div class="trainer-name">Kabir Singh</div>
+        <div class="trainer-role">Combat Lead</div>
+        <div class="trainer-tags">
+          <span>Boxing</span><span>Muay Thai</span><span>Pro Record 12-1</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="trainer-card" data-tilt>
+      <div class="trainer-photo trainer-4">
+        <div class="silhouette"></div>
+        <div class="photo-grain"></div>
+      </div>
+      <div class="trainer-info">
+        <div class="trainer-name">Rhea Kapoor</div>
+        <div class="trainer-role">Mobility & Recovery</div>
+        <div class="trainer-tags">
+          <span>FRC</span><span>Breathwork</span><span>Physiotherapy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section class="section facilities" id="facilities">
+  <div class="section-head">
+    <div class="kicker"><span class="kicker-num">04</span><span>Facilities</span></div>
+    <h2 class="section-title">Built like a <em>machine.</em></h2>
+    <p class="section-sub">24,000 sq ft of industrial-grade training space in the heart of Delhi.</p>
+  </div>
+
+  <div class="facilities-grid">
+    <div class="facility facility-lg" data-tilt>
+      <div class="facility-bg facility-bg-1"></div>
+      <div class="facility-content">
+        <div class="facility-meta">Floor 01</div>
+        <h3>Strength Hall</h3>
+        <p>14 competition platforms, calibrated bars up to 60kg, monolith deadlift platforms.</p>
+      </div>
+    </div>
+
+    <div class="facility" data-tilt>
+      <div class="facility-bg facility-bg-2"></div>
+      <div class="facility-content">
+        <div class="facility-meta">Floor 02</div>
+        <h3>Hypertrophy Zone</h3>
+        <p>120+ selectorized and plate-loaded stations, cable rigs, machines from Hammer & Rogue.</p>
+      </div>
+    </div>
+
+    <div class="facility" data-tilt>
+      <div class="facility-bg facility-bg-3"></div>
+      <div class="facility-content">
+        <div class="facility-meta">Floor 02</div>
+        <h3>Combat Studio</h3>
+        <p>Full-size ring, 24 heavy bags, mats, and a 6m cage for sparring sessions.</p>
+      </div>
+    </div>
+
+    <div class="facility" data-tilt>
+      <div class="facility-bg facility-bg-4"></div>
+      <div class="facility-content">
+        <div class="facility-meta">Floor 03</div>
+        <h3>Recovery Lab</h3>
+        <p>Sauna, cold plunge, contrast therapy, and Normatec boots in private pods.</p>
+      </div>
+    </div>
+
+    <div class="facility facility-lg" data-tilt>
+      <div class="facility-bg facility-bg-5"></div>
+      <div class="facility-content">
+        <div class="facility-meta">Floor 03</div>
+        <h3>Athlete Lab</h3>
+        <p>Force plates, velocity-based training, DEXA scans, and private coaching suites.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials" id="testimonials">
+  <div class="section-head">
+    <div class="kicker"><span class="kicker-num">05</span><span>Members</span></div>
+    <h2 class="section-title">The strongest <em>testimony</em> is results.</h2>
+  </div>
+
+  <div class="testimonials-grid">
+    <article class="testimonial" data-tilt>
+      <div class="quote-mark">"</div>
+      <p>Three years. Two national records. One family. ID changed the trajectory of my training — and my life.</p>
+      <div class="who">
+        <div class="who-avatar">RV</div>
+        <div>
+          <div class="who-name">Rohan Verma</div>
+          <div class="who-role">Powerlifter, Member since 2021</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="testimonial" data-tilt>
+      <div class="quote-mark">"</div>
+      <p>Dropped 22kg, gained muscle, and the programming is so smart I never feel wrecked. Coaches are world-class.</p>
+      <div class="who">
+        <div class="who-avatar">AN</div>
+        <div>
+          <div class="who-name">Ananya Nair</div>
+          <div class="who-role">Transformation, Member since 2023</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="testimonial" data-tilt>
+      <div class="quote-mark">"</div>
+      <p>The 5AM crowd at ID is unlike anything in Delhi. Quiet, focused, and the equipment is always clean and ready.</p>
+      <div class="who">
+        <div class="who-avatar">DS</div>
+        <div>
+          <div class="who-name">Devansh Saxena</div>
+          <div class="who-role">Hybrid Athlete, Member since 2022</div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="stats-strip">
+    <div class="stat">
+      <div class="stat-num"><span data-count="98">0</span>%</div>
+      <div class="stat-lbl">Member retention</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span data-count="240">0</span>+</div>
+      <div class="stat-lbl">Classes / week</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span data-count="15">0</span></div>
+      <div class="stat-lbl">State records set</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">4.<span data-count="9">0</span></div>
+      <div class="stat-lbl">Google rating</div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section location" id="location">
+  <div class="section-head">
+    <div class="kicker"><span class="kicker-num">06</span><span>Location</span></div>
+    <h2 class="section-title">Find your <em>district.</em></h2>
+  </div>
+
+  <div class="location-wrap">
+    <div class="location-info">
+      <div class="loc-block">
+        <div class="loc-label">Address</div>
+        <div class="loc-value">Plot 14, Industrial District<br/>Connaught Place, New Delhi 110001</div>
+      </div>
+      <div class="loc-block">
+        <div class="loc-label">Hours</div>
+        <div class="loc-value">Mon–Fri &nbsp; 5:00 AM – 11:00 PM<br/>Sat–Sun &nbsp; 6:00 AM – 10:00 PM<br/><span class="muted">Members: 24/7</span></div>
+      </div>
+      <div class="loc-block">
+        <div class="loc-label">Contact</div>
+        <div class="loc-value">+91 98765 43210<br/>hello@irondistrict.club</div>
+      </div>
+      <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="btn btn-primary">
+        <span>Get Directions on WhatsApp</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="location-map">
+      <div class="map-grid" aria-hidden="true"></div>
+      <div class="map-pin">
+        <div class="pin-pulse"></div>
+        <div class="pin-dot"></div>
+      </div>
+      <div class="map-coords">28.6139° N &nbsp; 77.2090° E</div>
+      <div class="map-blocks">
+        <div class="block b1"></div>
+        <div class="block b2"></div>
+        <div class="block b3"></div>
+        <div class="block b4"></div>
+        <div class="block b5"></div>
+        <div class="block b6"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="contact-wrap">
+    <div class="contact-head">
+      <div class="kicker"><span class="kicker-num">07</span><span>Contact</span></div>
+      <h2 class="section-title">Start your <em>journey.</em></h2>
+      <p class="section-sub">Drop us a line. A coach will reach out within 24 hours to map your first 90 days.</p>
+    </div>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.form-status').classList.add('sent'); this.querySelector('.form-status').textContent='Message sent. We will reply within 24 hours.';">
+      <div class="form-row">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" required placeholder="Your full name" />
+        </div>
+        <div class="field">
+          <label>Phone</label>
+          <input type="tel" required placeholder="+91" />
+        </div>
+      </div>
+      <div class="field">
+        <label>Email</label>
+        <input type="email" required placeholder="you@email.com" />
+      </div>
+      <div class="field">
+        <label>Goal</label>
+        <select required>
+          <option value="">Select your primary goal</option>
+          <option>Build strength</option>
+          <option>Lose fat / recomposition</option>
+          <option>Train for a sport</option>
+          <option>General fitness</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Message</label>
+        <textarea rows="4" placeholder="Tell us about your training history..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">
+        <span>Start Your Journey</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </button>
+      <div class="form-status"></div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="nav-logo">
+        <span class="logo-mark">ID</span>
+        <span class="logo-text">IRON<br/>DISTRICT</span>
+      </div>
+      <p>Engineered for those who refuse average. A premium training district in the heart of Delhi.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#programs">Programs</a>
+      <a href="#plans">Membership</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#facilities">Facilities</a>
+    </div>
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+      <a href="#">Schedule</a>
+      <a href="#">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">Strava</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 IRON DISTRICT. All rights reserved.</div>
+    <div>Built heavy. Forged in Delhi.</div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
+  <span class="wa-pulse"></span>
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
+    <path d="M16 0C7.2 0 0 7.2 0 16c0 2.8.7 5.5 2.1 7.9L0 32l8.4-2.2C10.7 31.3 13.3 32 16 32c8.8 0 16-7.2 16-16S24.8 0 16 0zm0 29.3c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-5 1.3 1.3-4.9-.3-.5C3.6 21.6 2.7 18.9 2.7 16 2.7 8.5 8.5 2.7 16 2.7S29.3 8.5 29.3 16 23.5 29.3 16 29.3zm8.7-9.7c-.5-.2-2.8-1.4-3.2-1.5-.4-.2-.8-.2-1.1.2-.3.5-1.2 1.5-1.5 1.8-.3.3-.6.3-1 .1-.5-.2-1.9-.7-3.6-2.2-1.3-1.2-2.2-2.6-2.5-3.1-.3-.5 0-.7.2-1 .2-.2.5-.6.7-.8.2-.3.3-.5.5-.8.2-.3.1-.6 0-.8-.1-.2-1.1-2.6-1.5-3.6-.4-.9-.8-.8-1.1-.8h-.9c-.3 0-.8.1-1.3.6-.4.5-1.7 1.6-1.7 4s1.7 4.6 2 4.9c.2.3 3.4 5.2 8.3 7.3 1.2.5 2.1.8 2.8 1 1.2.4 2.2.3 3.1.2.9-.1 2.8-1.1 3.2-2.3.4-1.1.4-2.1.3-2.3-.1-.2-.5-.3-1-.5z"/>
+  </svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
